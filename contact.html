@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Zozor - Carnets de voyage</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="images/zozor_logo.png" alt="zozor_logo" />
+                        <h1>Zozor</h1>
+                    </div>
+                    <h2>Carnets de voyage</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Zozor.html">Accueil</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <form method="post" action="traitement.php">
+                    <fieldset>
+                        <legend>Pour me contacter :</legend>
+
+                        <p><label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" required /></p>
+
+                        <p><label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required /></p>
+
+                        <p><label for="date">Date :</label>
+                        <input type="date" name="date" id="date" required /></p>
+
+                        <p><label for="commentaire">Commentaire :</label><br/>
+                        <textarea name="commentaire" id="commentaire" rows="10" cols="80"></textarea></p>
+
+                        <input type="submit" value="Envoyer" />
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
